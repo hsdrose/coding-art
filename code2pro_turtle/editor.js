@@ -80,7 +80,6 @@ $(document).ready(function () {
         $('#mycanvas').hide();
     });
 
-
     function builtinRead(x) {
         if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
             throw "File not found: '" + x + "'";
@@ -89,3 +88,9 @@ $(document).ready(function () {
 
     window.art_editor.focus();
 });
+
+function set_art(art_content)
+{
+    window.art_editor.setValue(window.art_works[art_content]);
+    window.art_editor.focus();
+}

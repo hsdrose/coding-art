@@ -1,7 +1,6 @@
 window.art_works = {};
 
-window.art_works.art_flower = `
-import turtle, math
+window.art_works.art_flower = `import turtle, math
 
 def p_line(t, n, length, angle):
     """Draws n line segments."""
@@ -72,8 +71,7 @@ def main():
 main()
 `;
 
-window.art_works.art_honeycomb = `
-# https://gist.github.com/utstikkar/3618027
+window.art_works.art_honeycomb = `# https://gist.github.com/utstikkar/3618027
 # turtle honeycomb
 # Lasse Kosiol
 # 1.9.2012
@@ -123,8 +121,7 @@ for circle in range (circles):
 turtle.exitonclick()
 `;
 
-window.art_works.art_spiral_squares = `
-from random import randint
+window.art_works.art_spiral_squares = `from random import randint
 bgcolor('black')
 x = 1
 turtle.speed(0)
@@ -138,9 +135,3 @@ while x < 400:
   turtle.rt(90.991)
   x = x + 1
 `;
-
-function set_art(art_content)
-{
-    window.art_editor.setValue(window.art_works[art_content]);
-    window.art_editor.focus();
-}
