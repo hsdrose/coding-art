@@ -242,4 +242,61 @@ for x in range(400):
     ivy.rt(90.991)
 `;
 
+    window.art_works.art_math_puzzle = `# Solving math puzzle using Turtle
+# The triangle is isosceles right (2 equal sides make the 90 degree angle)
+import turtle, math
+
+def p_line(t, n, length, angle):
+    """Draws n line segments."""
+    for i in range(n):
+        t.fd(length)
+        t.lt(angle)
+
+def polygon(t, n, length):
+    """Draws a polygon with n sides."""
+    angle = 360/n
+    p_line(t, n, length, angle)
+
+def move(t, dx, dy):
+    t.up()
+    x, y = t.pos()
+    t.setpos(x + dx, y + dy)
+    t.down()
+
+def main():
+    window = turtle.Screen() # create a screen
+    window.bgcolor("#f5fffa")
+    ivy = turtle.Turtle()
+    ivy.shape("arrow")
+    ivy.color("#EF597B")
+    ivy.width(2)
+    ivy.speed(20)
+
+    ivy.up()
+    ivy.goto(-100, -100)
+    ivy.down()
+    polygon(ivy, 4, 150)
+
+    move(ivy, 0, 50)
+    ivy.fd(150)
+    move(ivy, 0, 50)
+    ivy.back(150)
+    move(ivy, 50, 50)
+    ivy.rt(90)
+    ivy.fd(150)
+    move(ivy, 50, 0)
+    ivy.back(150)
+
+    move(ivy, -50, -50)
+    ivy.color("green")
+    ivy.setpos(50, 50)
+    ivy.color("blue")
+    ivy.setpos(0, -100)
+    ivy.color("green")
+    ivy.setpos(-50, 0)
+    ivy.ht()
+
+main()
+`;
+
 }
