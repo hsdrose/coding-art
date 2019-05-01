@@ -244,6 +244,8 @@ for x in range(400):
 
     window.art_works.art_math_puzzle = `# Solving math puzzle using Turtle
 # The triangle is isosceles right (2 equal sides make the 90 degree angle)
+# The source: https://gist.github.com/vietlq/04854aef227bc53a71ee096976a1c1f1
+
 import turtle, math
 
 def p_line(t, n, length, angle):
