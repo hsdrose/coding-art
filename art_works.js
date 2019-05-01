@@ -130,7 +130,7 @@ x = 1
 turtle.speed(0)
 while x < 400:
   r = randint(0,255)
-  g = randint(0,255) 
+  g = randint(0,255)
   b = randint(0,255)
 
   turtle.pencolor(r,g,b)
@@ -138,8 +138,9 @@ while x < 400:
   turtle.rt(90.991)
   x = x + 1
 `;
- 
+
 function set_art(art_content)
 {
+    alert(`Got art_content=${art_content}`);
     document.getElementById("code").value = document.art_works[art_content];
 }
