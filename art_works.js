@@ -119,7 +119,8 @@ for circle in range (circles):
     move(0,60)
 `;
 
-window.art_works.art_spiral_squares = `from random import randint
+window.art_works.art_spiral_squares = `import turtle
+from random import randint
 bgcolor('black')
 x = 1
 turtle.speed(0)
