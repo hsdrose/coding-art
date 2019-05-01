@@ -146,7 +146,7 @@ def leaf(t, r, angle, p):
     t.end_fill()
 
 def main():
-    window = turtle.Screen() #creat a screen
+    window = turtle.Screen() # create a screen
     window.bgcolor("#f5fffa")
     ivy = turtle.Turtle()
     ivy.shape("turtle")
@@ -223,16 +223,19 @@ for circle in range (circles):
     window.art_works.art_spiral_squares = `import turtle
 from random import randint
 
-turtle.speed(0)
+window = turtle.Screen() # create a screen
+window.bgcolor("black")
+ivy = turtle.Turtle()
+ivy.speed(0)
 
 for x in range(400):
     r = randint(0,255)
     g = randint(0,255)
     b = randint(0,255)
 
-    turtle.pencolor(r,g,b)
-    turtle.fd(50 + x)
-    turtle.rt(90.991)
+    ivy.pencolor(r,g,b)
+    ivy.fd(50 + x)
+    ivy.rt(90.991)
 `;
 
 }
