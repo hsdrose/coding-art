@@ -301,4 +301,16 @@ def main():
 main()
 `;
 
+    window.art_works.art_180_lines = `# 180 lines with difference of 2 degrees
+# Adapted from http://www.mathcats.com/gallery/15wordcontest.html
+# and http://chrisma.es/logoturtle/samples/
+import turtle
+turtle.speed(100)
+turtle.color('red')
+for x in range(180):
+    turtle.fd(300)
+    turtle.bk(300)
+    turtle.rt(2)
+`;
+
 }
