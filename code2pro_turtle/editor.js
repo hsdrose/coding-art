@@ -101,7 +101,9 @@ function prepare_art_works()
 {
     window.art_works = {};
     
-    window.art_works.art_flower = `import turtle, math
+    window.art_works.art_flower = `# Drawing a flower stalk
+# The original source will be added later
+import turtle, math
 
 def p_line(t, n, length, angle):
     """Draws n line segments."""
@@ -172,11 +174,11 @@ def main():
 main()
 `;
 
-    window.art_works.art_honeycomb = `# https://gist.github.com/utstikkar/3618027
-# turtle honeycomb
+    window.art_works.art_honeycomb = `# turtle honeycomb
 # Lasse Kosiol
 # 1.9.2012
 # python workshop opentechschool berlin
+# The source: https://gist.github.com/utstikkar/3618027
 
 import turtle
 from random import randint
@@ -220,7 +222,9 @@ for circle in range (circles):
     move(0,60)
 `;
 
-    window.art_works.art_spiral_squares = `import turtle
+    window.art_works.art_spiral_squares = `# Draw spiral from squares
+# Adapted from https://www.instructables.com/id/Easy-Designs-Turtle-Graphics-Python/
+import turtle
 from random import randint
 
 window = turtle.Screen() # create a screen
