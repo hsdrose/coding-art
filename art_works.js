@@ -1,6 +1,6 @@
-document.art_works = {};
+window.art_works = {};
 
-document.art_works.art_flower = `
+window.art_works.art_flower = `
 import turtle, math
 
 def p_line(t, n, length, angle):
@@ -72,7 +72,7 @@ def main():
 main()
 `;
 
-document.art_works.art_honeycomb = `
+window.art_works.art_honeycomb = `
 # https://gist.github.com/utstikkar/3618027
 # turtle honeycomb
 # Lasse Kosiol
@@ -123,7 +123,7 @@ for circle in range (circles):
 turtle.exitonclick()
 `;
 
-document.art_works.art_spiral_squares = `
+window.art_works.art_spiral_squares = `
 from random import randint
 bgcolor('black')
 x = 1
@@ -141,6 +141,5 @@ while x < 400:
 
 function set_art(art_content)
 {
-    jQuery('#code').val(document.art_works[art_content]);
-    jQuery('.CodeMirror textarea:first-child').val(document.art_works[art_content]);
+    window.art_editor.setValue(window.art_works[art_content]);
 }

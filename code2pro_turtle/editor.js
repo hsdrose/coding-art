@@ -38,8 +38,7 @@ $(document).ready(function () {
         }
     }
 
-
-    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+    window.art_editor = CodeMirror.fromTextArea(document.getElementById('code'), {
         parserfile: ["parsepython.js"],
         autofocus: true,
         theme: "solarized dark",
@@ -54,7 +53,7 @@ $(document).ready(function () {
         parserConfig: {'pythonVersion': 2, 'strictErrors': true}
     });
 
-    $("#skulpt_run").click(function (e) { keymap["Ctrl-Enter"](editor)} );
+    $("#skulpt_run").click(function (e) { keymap["Ctrl-Enter"](window.art_editor)} );
 
     $("#toggledocs").click(function (e) {
         $("#quickdocs").toggle();
@@ -62,8 +61,8 @@ $(document).ready(function () {
 
     var exampleCode = function (id, text) {
         $(id).click(function (e) {
-            editor.setValue(text);
-            editor.focus(); // so that F5 works, hmm
+            window.art_editor.setValue(text);
+            window.art_editor.focus(); // so that F5 works, hmm
         });
     };
 
@@ -88,5 +87,5 @@ $(document).ready(function () {
         return Sk.builtinFiles["files"][x];
     }
 
-    editor.focus();
+    window.art_editor.focus();
 });
