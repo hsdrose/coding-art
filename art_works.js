@@ -85,40 +85,38 @@ circles = 20
 turtle.speed(100)
 
 def move(length, angle):
-                turtle.right(angle)
-                turtle.forward(length)
+    turtle.right(angle)
+    turtle.forward(length)
 
 def hex():
-        turtle.pendown()
-        turtle.color( randint(0,255),randint(0,255),randint(0,255) )
-        turtle.begin_fill()
-        for i in range(6):
-                move(size,-60)
-        turtle.end_fill()
-        turtle.penup()
+    turtle.pendown()
+    turtle.color( randint(0,255),randint(0,255),randint(0,255) )
+    turtle.begin_fill()
+    for i in range(6):
+        move(size,-60)
+    turtle.end_fill()
+    turtle.penup()
 
 # start
 turtle.penup()
 
 for circle in range (circles):
-        if circle == 0:
-                hex()
-                move(size,-60)
-                move(size,-60)
-                move(size,-60)
-                move(0,180)
-        for i in range (6):
-                move(0,60)
-                for j in range (circle+1):
-                        hex()
-                        move(size,-60)
-                        move(size,60)
-                move(-size,0)
-        move(-size,60)
-        move(size,-120)
+    if circle == 0:
+        hex()
+        move(size,-60)
+        move(size,-60)
+        move(size,-60)
+        move(0,180)
+    for i in range (6):
         move(0,60)
-
-turtle.exitonclick()
+        for j in range (circle+1):
+            hex()
+            move(size,-60)
+            move(size,60)
+        move(-size,0)
+    move(-size,60)
+    move(size,-120)
+    move(0,60)
 `;
 
 window.art_works.art_spiral_squares = `from random import randint
@@ -126,12 +124,12 @@ bgcolor('black')
 x = 1
 turtle.speed(0)
 while x < 400:
-  r = randint(0,255)
-  g = randint(0,255)
-  b = randint(0,255)
+    r = randint(0,255)
+    g = randint(0,255)
+    b = randint(0,255)
 
-  turtle.pencolor(r,g,b)
-  turtle.fd(50 + x)
-  turtle.rt(90.991)
-  x = x + 1
+    turtle.pencolor(r,g,b)
+    turtle.fd(50 + x)
+    turtle.rt(90.991)
+    x = x + 1
 `;
