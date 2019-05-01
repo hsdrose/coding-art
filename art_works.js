@@ -1,3 +1,5 @@
+document.art_works = {};
+
 document.art_works.art_flower = `
 import turtle, math
 
