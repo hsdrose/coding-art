@@ -141,6 +141,6 @@ while x < 400:
 
 function set_art(art_content)
 {
-    alert(`Got art_content=${art_content}`);
+    jQuery('#code').val(document.art_works[art_content]);
     jQuery('.CodeMirror textarea:first-child').val(document.art_works[art_content]);
 }
