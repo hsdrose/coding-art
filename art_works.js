@@ -142,5 +142,5 @@ while x < 400:
 function set_art(art_content)
 {
     alert(`Got art_content=${art_content}`);
-    document.getElementById("code").value = document.art_works[art_content];
+    jQuery('.CodeMirror textarea').value = document.art_works[art_content];
 }
