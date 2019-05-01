@@ -142,4 +142,5 @@ while x < 400:
 function set_art(art_content)
 {
     window.art_editor.setValue(window.art_works[art_content]);
+    window.art_editor.focus();
 }
