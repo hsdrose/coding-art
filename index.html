@@ -48,13 +48,13 @@
 <script type="text/javascript">
 function set_art(art_content)
 {
-    document.getElementById("code").value = art_content;
+    document.getElementById("code").value = document.art_works[art_content];
 }
 </script>
 <div>
-    <button onclick="set_art(art_flower);">Flower</button>
-    <button onclick="set_art(art_honeycomb);">Honeycomb</button>
-    <button onclick="set_art(art_spiral_squares);">Spiral Squares</button>
+    <button onclick="set_art('art_flower');">Flower</button>
+    <button onclick="set_art('art_honeycomb');">Honeycomb</button>
+    <button onclick="set_art('art_spiral_squares');">Spiral Squares</button>
 </div>
 <textarea id="code" cols="85" rows="80" style="display: none;">
 import turtle, math
@@ -128,7 +128,7 @@ def main():
 main()
 </textarea>
 <script type="text/javascript">
-var art_flower = `
+document.art_works.art_flower = `
 import turtle, math
 
 def p_line(t, n, length, angle):
@@ -200,7 +200,7 @@ def main():
 main()
 `;
 
-var art_honeycomb = `
+document.art_works.art_honeycomb = `
 # https://gist.github.com/utstikkar/3618027
 # turtle honeycomb
 # Lasse Kosiol
@@ -251,7 +251,7 @@ for circle in range (circles):
 turtle.exitonclick()
 `;
 
-var art_spiral_squares = `
+document.art_works.art_spiral_squares = `
 from random import randint
 bgcolor('black')
 x = 1
