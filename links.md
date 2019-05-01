@@ -1,3 +1,6 @@
 * [Skuplt](https://www.skulpt.org/) - the original author of Turtle in browsers in Python. Check [GitHub](https://github.com/skulpt/skulpt) and the [sample page](http://elliotthauser.com/skulpt/using.html)
 * [Python for beginners - simple drawing](https://opentechschool.github.io/python-beginners/en/simple_drawing.html)
-* 
+* [Trinket - Use Python in browser to teach coding, charting, playing with Turtle](https://trinket.io/python)
+* [Skulpt: client side Python without preprocessing (skulpt.org)](https://news.ycombinator.com/item?id=15591947)
+* [Instances - A Herd of Turtles](http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/InstancesAHerdofTurtles.html)
+* [Quora - What's the coolest Python turtle graphic you have seen?](https://www.quora.com/Whats-the-coolest-Python-turtle-graphic-you-have-seen)
