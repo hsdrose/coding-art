@@ -86,7 +86,7 @@ $(document).ready(function () {
         return Sk.builtinFiles["files"][x];
     }
 
-    window.art_editor.focus();
+    set_art("art_honeycomb");
 });
 
 function set_art(art_content)
