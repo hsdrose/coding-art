@@ -121,10 +121,10 @@ for circle in range (circles):
 
 window.art_works.art_spiral_squares = `import turtle
 from random import randint
-bgcolor('black')
-x = 1
+
 turtle.speed(0)
-while x < 400:
+
+for x in range(400):
     r = randint(0,255)
     g = randint(0,255)
     b = randint(0,255)
@@ -132,5 +132,4 @@ while x < 400:
     turtle.pencolor(r,g,b)
     turtle.fd(50 + x)
     turtle.rt(90.991)
-    x = x + 1
 `;
