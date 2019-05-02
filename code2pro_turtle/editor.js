@@ -150,26 +150,26 @@ def leaf(t, r, angle, p):
 def main():
     window = turtle.Screen() # create a screen
     window.bgcolor("#f5fffa")
-    ivy = turtle.Turtle()
-    ivy.shape("turtle")
-    ivy.color("#EF597B")
-    ivy.width(5)
-    ivy.speed(0)
+    pen = turtle.Turtle()
+    pen.shape("turtle")
+    pen.color("#EF597B")
+    pen.width(5)
+    pen.speed(0)
 
     # Drawing flower
-    flower(ivy, 10, 40, 100, 360)
+    flower(pen, 10, 40, 100, 360)
 
     # Drawing pedicel
-    ivy.color("#B67721")
-    ivy.rt(90)
-    ivy.fd(200)
+    pen.color("#B67721")
+    pen.rt(90)
+    pen.fd(200)
 
     # Drawing leaf
-    ivy.rt(270)
-    #ivy.color("#7ABA7A")
-    ivy.color("#41924B")
-    leaf(ivy, 40, 80, 180)
-    ivy.ht()
+    pen.rt(270)
+    #pen.color("#7ABA7A")
+    pen.color("#41924B")
+    leaf(pen, 40, 80, 180)
+    pen.ht()
 
 main()
 `;
@@ -229,17 +229,17 @@ from random import randint
 
 window = turtle.Screen() # create a screen
 window.bgcolor("black")
-ivy = turtle.Turtle()
-ivy.speed(0)
+pen = turtle.Turtle()
+pen.speed(0)
 
 for x in range(400):
     r = randint(0,255)
     g = randint(0,255)
     b = randint(0,255)
 
-    ivy.pencolor(r,g,b)
-    ivy.fd(50 + x)
-    ivy.rt(90.991)
+    pen.pencolor(r,g,b)
+    pen.fd(50 + x)
+    pen.rt(90.991)
 `;
 
     window.art_works.art_math_puzzle = `# Solving math puzzle using Turtle
@@ -268,35 +268,35 @@ def move(t, dx, dy):
 def main():
     window = turtle.Screen() # create a screen
     window.bgcolor("#f5fffa")
-    ivy = turtle.Turtle()
-    ivy.shape("arrow")
-    ivy.color("#EF597B")
-    ivy.width(2)
-    ivy.speed(20)
+    pen = turtle.Turtle()
+    pen.shape("arrow")
+    pen.color("#EF597B")
+    pen.width(2)
+    pen.speed(20)
 
-    ivy.up()
-    ivy.goto(-100, -100)
-    ivy.down()
-    polygon(ivy, 4, 150)
+    pen.up()
+    pen.goto(-100, -100)
+    pen.down()
+    polygon(pen, 4, 150)
 
-    move(ivy, 0, 50)
-    ivy.fd(150)
-    move(ivy, 0, 50)
-    ivy.back(150)
-    move(ivy, 50, 50)
-    ivy.rt(90)
-    ivy.fd(150)
-    move(ivy, 50, 0)
-    ivy.back(150)
+    move(pen, 0, 50)
+    pen.fd(150)
+    move(pen, 0, 50)
+    pen.back(150)
+    move(pen, 50, 50)
+    pen.rt(90)
+    pen.fd(150)
+    move(pen, 50, 0)
+    pen.back(150)
 
-    move(ivy, -50, -50)
-    ivy.color("green")
-    ivy.setpos(50, 50)
-    ivy.color("blue")
-    ivy.setpos(0, -100)
-    ivy.color("green")
-    ivy.setpos(-50, 0)
-    ivy.ht()
+    move(pen, -50, -50)
+    pen.color("green")
+    pen.setpos(50, 50)
+    pen.color("blue")
+    pen.setpos(0, -100)
+    pen.color("green")
+    pen.setpos(-50, 0)
+    pen.ht()
 
 main()
 `;
@@ -472,7 +472,7 @@ speed(100)
 snowflake(120, 3)
 `;
 
-window.art_works.art_moroccan_mosaic = `# Moroccan Mosaic using Python Turtle - www.101computing.net/morroccan-mosaic/
+    window.art_works.art_moroccan_mosaic = `# Moroccan Mosaic using Python Turtle - www.101computing.net/morroccan-mosaic/
 
 import turtle
 myPen = turtle.Turtle()
@@ -502,6 +502,59 @@ def drawMosaic(color1,numberOfSides1,size1,color2,numberOfSides2,size2,numberOfI
 drawMosaic("#980C6B",8,80,"#DD6BB8",5,70,20)
 
 myPen.hideturtle()
+`;
+
+    window.art_works.art_fractal_tree = `# Fractal tree
+# Source: https://blog.goodaudience.com/fractals-and-recursion-in-python-d11d87fcf9cd
+
+import turtle
+
+def move(t, dx, dy):
+    t.up()
+    x, y = t.pos()
+    t.setpos(x + dx, y + dy)
+    t.down()
+
+def tree(length,n):
+    if length < (length/n):
+        return
+    turtle.forward(length)
+    turtle.left(45)
+    tree(length * 0.5,length/n)
+    turtle.left(20)
+    tree(length * 0.5,length/n)
+    turtle.right(75)
+    tree(length * 0.5,length/n)
+    turtle.right(20)
+    tree(length * 0.5,length/n)
+    turtle.left(30)
+    turtle.backward(length)
+
+turtle.speed(100)
+move(turtle, 0, -150)
+turtle.left(90)
+turtle.backward(30)
+tree(200,4)
+`;
+
+    window.art_works.art_your_own = `# Code your own art here!
+
+import turtle
+from random import randint
+
+window = turtle.Screen() # create a screen
+window.bgcolor("black")
+pen = turtle.Turtle()
+pen.speed(10)
+
+def move(t, dx, dy):
+    t.up()
+    x, y = t.pos()
+    t.setpos(x + dx, y + dy)
+    t.down()
+
+move(pen, -50, -50)
+pen.forward(100)
 `;
 
 }
