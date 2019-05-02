@@ -547,4 +547,21 @@ pen.speed(10)
 pen.forward(100)
 `;
 
+    window.art_works.art_fibo = `# Fibonacci numbers & recursion
+def fib(n):
+    if n < 2:
+        return 1
+    return fib(n-2) + fib(n-1)
+
+print("hello!")
+print(fib(20))
+
+def multiply(a, b):
+    return a * b
+
+print(map(lambda x: x*x, [1,2,3,4]))
+print(filter(lambda x: x % 2, [1,2,3,4]))
+print(reduce(multiply, [1,2,3,4], 1))
+`;
+
 }
