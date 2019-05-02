@@ -15,3 +15,4 @@
 * [Spirograph](https://www.101computing.net/python-turtle-spirograph/)
 * [Recursion and fractal](http://openbookproject.net/thinkcs/python/english3e/recursion.html)
 * [Snowflake fractal](http://www.algorithm.co.il/blogs/computer-science/fractals-in-10-minutes-no-6-turtle-snowflake/)
+* [Moroccan Mosaic](https://www.101computing.net/moroccan-mosaic/)
