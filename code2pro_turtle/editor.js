@@ -336,4 +336,39 @@ myTurtle.speed(0)
 hilbert2(5, "a", 90, 5, myTurtle)
 `;
 
+    window.art_works.art_polygons_stars = `# Polygons and stars
+
+import turtle
+
+def move(t, dx, dy):
+    t.up()
+    x, y = t.pos()
+    t.setpos(x + dx, y + dy)
+    t.down()
+
+def draw_polygon(n, size):
+    for x in range(n):
+        turtle.fd(size)
+        # Use floating point to close the polygon
+        turtle.rt(360./n)
+
+def draw_star(n, size, diff=2):
+    for x in range(n):
+        turtle.fd(size)
+        # Use floating point to close the star
+        turtle.rt(diff*360./n)
+
+turtle.speed(12)
+turtle.color('red')
+move(turtle, -50, 150)
+draw_polygon(17, 50)
+
+move(turtle, -25, -75)
+turtle.color('#77CDEF')
+draw_star(7, 100, 4)
+
+move(turtle, 0, -75)
+turtle.color('darkgreen')
+draw_star(23, 75, 3)
+`;
 }
