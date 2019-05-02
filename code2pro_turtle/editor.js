@@ -538,22 +538,12 @@ tree(200,4)
 `;
 
     window.art_works.art_your_own = `# Code your own art here!
-
 import turtle
-from random import randint
 
 window = turtle.Screen() # create a screen
-window.bgcolor("black")
+window.bgcolor("#abcdef")
 pen = turtle.Turtle()
 pen.speed(10)
-
-def move(t, dx, dy):
-    t.up()
-    x, y = t.pos()
-    t.setpos(x + dx, y + dy)
-    t.down()
-
-move(pen, -50, -50)
 pen.forward(100)
 `;
 
