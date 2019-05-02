@@ -445,4 +445,31 @@ sleep(0.5)
 mySpirograph.clear()
 mySpirograph.getscreen().update()
 `;
+
+    window.art_works.art_snowflake = `# Snowflake fractal
+# Adapted from http://www.algorithm.co.il/blogs/computer-science/fractals-in-10-minutes-no-6-turtle-snowflake/
+
+from turtle import *
+
+def fractal_side(length, depth):
+    if depth == 0:
+        forward(length)
+    else:
+        fractal_side(length/3, depth - 1)
+        right(60)
+        fractal_side(length/3, depth - 1)
+        left(120)
+        fractal_side(length/3, depth - 1)
+        right(60)
+        fractal_side(length/3, depth - 1)
+
+def snowflake(length, depth):
+    for x in range(6):
+        fractal_side(length, depth)
+        rt(60)
+
+speed(100)
+snowflake(120, 3)
+`;
+
 }
