@@ -531,7 +531,7 @@ def tree(length,n):
     turtle.backward(length)
 
 turtle.speed(100)
-move(turtle, 0, -150)
+move(turtle, 0, -200)
 turtle.left(90)
 turtle.backward(30)
 tree(200,4)
