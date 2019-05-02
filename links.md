@@ -10,3 +10,6 @@
 * [Loops Review and Turtle Drawing](http://opensask.ca/Python/MoreTurtles/LoopsReview.html)
 * [Python3 Turtle Docs](https://docs.python.org/3/library/turtle.html)
 * [Logo Turtle in OCaml](https://github.com/cmaes/logoturtle) and [example](http://chrisma.es/logoturtle/)
+* [Fractal: Space Filling Hilbert Curve](https://blog.klipse.tech/python/2017/01/04/python-turtle-fractal.html)
+* [Fractal: Sierpiński Triangle and Sierpiński Carpet](https://www.101computing.net/python-fractals/)
+* [Spirograph](https://www.101computing.net/python-turtle-spirograph/)
