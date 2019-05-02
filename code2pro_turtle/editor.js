@@ -361,15 +361,15 @@ def draw_star(n, size, diff=2):
 turtle.speed(12)
 turtle.color('red')
 move(turtle, -50, 150)
-draw_polygon(17, 50)
+draw_polygon(17, 60)
 
 move(turtle, -25, -75)
 turtle.color('#77CDEF')
 draw_star(7, 100, 4)
 
-move(turtle, 0, -75)
+move(turtle, 25, -75)
 turtle.color('darkgreen')
-draw_star(23, 75, 3)
+draw_star(23, 60, 3)
 `;
 
     window.art_works.art_spirograph = `# Source: https://www.101computing.net/python-turtle-spirograph/
